@@ -22,11 +22,13 @@ Project Organization
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make dirs` or `make clean`
     ├── README.md          <- The top-level README for developers using this project.
+    │
     ├── data
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
     ├── definitions.py     <- Contains useful project-specific "environment variables", such as ROOT_DIR.
+    │
     ├── eval.dvc           <- The end of the data pipeline - evaluates the trained model on the test dataset.
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
