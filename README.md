@@ -7,8 +7,8 @@ Instructions
 ------------
 1. Clone the repo.
 1. Run `make dirs` to create the missing parts of the directory structure described below. 
-1. *Optional:* Run `make virtualenv` to create a python virtual environment. Skip if using conda or some other env manager.
-    1. Run `source env/bin/activate` to activate the virtualenv. 
+1. *Optional:* Run `make venv` to create a python virtual environment. Skip if using conda or some other env manager.
+    1. Run `source .env/bin/activate` to activate the venv. 
 1. Run `make requirements` to install required python packages.
 1. Put the raw data in `data/raw`.
 1. To save the raw data to the DVC cache, run `dvc commit raw_data.dvc`
@@ -26,6 +26,7 @@ Project Organization
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
+    ├── definitions.py     <- Contains useful project-specific "environment variables", such as ROOT_DIR.
     ├── eval.dvc           <- The end of the data pipeline - evaluates the trained model on the test dataset.
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
