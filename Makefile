@@ -13,9 +13,9 @@ PYTHON_INTERPRETER = python
 
 ## Create virtualenv.
 ## Activate with the command:
-## source env/bin/activate
-virtualenv:
-	virtualenv -p $(PYTHON_INTERPRETER) env
+## source .env/bin/activate
+venv:
+	$(PYTHON_INTERPRETER) -m venv .env
 
 ## Install Python Dependencies.
 ## Make sure you activate the virtualenv first!
