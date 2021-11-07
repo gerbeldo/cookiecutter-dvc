@@ -21,7 +21,9 @@ venv:
 ## Make sure you activate the virtualenv first!
 requirements: 
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
-	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
+	$(PYTHON_INTERPRETER) -m pip install -r requirements-dev.txt
+	$(PYTHON_INTERPRETER) -m pip install -r requirements-core.txt
+	$(PYTHON_INTERPRETER) -m pip freeze > requirements.txt
 
 ## Create directories that are ignored by git but required for the project
 dirs:
