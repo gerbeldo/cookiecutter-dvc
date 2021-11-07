@@ -1,4 +1,4 @@
-.PHONY: clean dirs virtualenv lint requirements push pull reproduce
+.PHONY: clean dirs venv lint requirements push pull reproduce
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -13,9 +13,9 @@ PYTHON_INTERPRETER = python3
 
 ## Create virtualenv.
 ## Activate with the command:
-## source .env/bin/activate
+## source .venv/bin/activate
 venv:
-	$(PYTHON_INTERPRETER) -m venv .env
+	$(PYTHON_INTERPRETER) -m venv .venv
 
 ## Install Python Dependencies.
 ## Make sure you activate the virtualenv first!
