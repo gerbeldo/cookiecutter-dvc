@@ -3,5 +3,5 @@
 
 # external requirements
 coverage
-flake8
-python-dotenv
+pre-commit
+#python-dotenv
