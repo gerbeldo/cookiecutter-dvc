@@ -104,3 +104,5 @@ end
 Modified from: [DAGsHub template](https://dagshub.com/DAGsHub-Official/Cookiecutter-DVC)
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+pre-commit hooks: [article](https://towardsdatascience.com/4-pre-commit-plugins-to-automate-code-reviewing-and-formatting-in-python-c80c6d2e9f5)
