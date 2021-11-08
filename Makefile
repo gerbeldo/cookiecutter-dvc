@@ -24,6 +24,7 @@ requirements:
 	$(PYTHON_INTERPRETER) -m pip install -r requirements-dev.txt
 	$(PYTHON_INTERPRETER) -m pip install -r requirements-core.txt
 	$(PYTHON_INTERPRETER) -m pip freeze > requirements.txt
+	pre-commit install
 
 ## Create directories that are ignored by git but required for the project
 dirs:
