@@ -45,13 +45,15 @@ Project Organization
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │   └── metrics.txt    <- Relevant metrics after evaluating the model.
+    ├── reports                     <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures                 <- Generated graphics and figures to be used in reporting
+    │   └── metrics.txt             <- Relevant metrics after evaluating the model.
     │   └── training_metrics.txt    <- Relevant metrics from training the model.
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── requirements-core.txt    <- project specific requirements, no secondary dependencies.
+    ├── requirements-dev.txt     <- development requirements.
+    ├── requirements.txt         <- The complete requirements file for reproducing the analysis environment,
+    │                               automatically generated with `pip freeze`, by `make requirements`.
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
@@ -60,8 +62,8 @@ Project Organization
     │   ├── data           <- Scripts to download or generate data
     │   │   └── make_dataset.py
     │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
+    │   ├── models         <- Scripts to train models and then use trained models to make predictions
+    │   │   │            
     │   │   ├── predict_model.py
     │   │   └── train_model.py
     │   │
